@@ -5,6 +5,8 @@ function Hero(){
             <p className="mt-5 text-2xl text-[#000000]">An open-source component kit for React.</p>
             <p className="mt-2 text-xl text-[#000000]">Made by JEDREK NINO B. DELICA</p>
         </header>
+
+        
     )
 }
 

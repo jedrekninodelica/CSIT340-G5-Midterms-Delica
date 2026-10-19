@@ -3,6 +3,10 @@ import Intro from "./components/Intro";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
+import StatCard from "./components/StatCard";
+import Features from "./components/Features";
+import FeatureCard from "./components/FeatureCard";
+import Footer from "./components/Footer";
 
 function App() {
   // comment: useState is a React hook that allows you to add state to functional components. It returns an array with two elements: the current state value and a function to update that value.
