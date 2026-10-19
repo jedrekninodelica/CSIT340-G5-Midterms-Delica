@@ -34,38 +34,17 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF9F2] text-[#800020]">
       <Navbar />
-      <Hero />
-      <Intro />
-      <Stats 
-        stars={stars}
-        downloads={downloads}
-        issues={issues}
-        onStar={handleStar}
-        onDownload={handleDownload}
-        onReport={handleReport}
-        onReset={handleReset}
+      <Intro
+        author="JEDREK NINO B. DELICA"
       />
-      <StatCard
+      <Hero
         stars={stars}
         downloads={downloads}
         issues={issues}
       />
+
       <Features />
-      <FeatureCard
-        tag="Free"
-        title="Open source"
-        description="Read the code and use it in any project."
-      />
-      <FeatureCard
-        tag="Small"
-        title="Lightweight"
-        description="Import only the components the page uses."
-      />  
-    <FeatureCard
-        tag="Simple"
-        title="Easy to learn"
-        description="Every component takes a few plain props."
-      />
+
       <Footer />
     </div>
   );
