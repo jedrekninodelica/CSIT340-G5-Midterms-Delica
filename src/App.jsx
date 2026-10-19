@@ -1,6 +1,11 @@
 import { useState } from "react";
+import Intro from "./components/Intro";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Stats from "./components/Stats";
 
 function App() {
+  // comment: useState is a React hook that allows you to add state to functional components. It returns an array with two elements: the current state value and a function to update that value.
   const [stars, setStars] = useState(0);
   const [downloads, setDownloads] = useState(0);
   const [issues, setIssues] = useState(5);
@@ -23,7 +28,9 @@ function App() {
     setIssues(5);
   }
 
+
   return (
+    // navbar
     <div className="flex min-h-screen flex-col bg-[#FFF9F2] text-[#800020]">
       <nav className="flex items-center justify-between bg-[#800020] px-20 py-6 text-[#FFF9F2]">
         <h1 className="text-3xl font-bold">Maroon UI</h1>
@@ -34,13 +41,15 @@ function App() {
         </ul>
         <p className="rounded-full bg-[#D45060] px-5 py-2 text-lg font-bold">v1.0</p>
       </nav>
-
+      // header
       <header className="px-20 pt-8 text-center">
         <h2 className="text-7xl font-bold">Build pages faster.</h2>
         <p className="mt-5 text-2xl text-[#000000]">An open-source component kit for React.</p>
         <p className="mt-2 text-xl text-[#000000]">Made by YOUR NAME</p>
       </header>
+    
 
+    // Stats
       <div className="flex justify-center gap-4 py-6">
         <button
           className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
@@ -68,6 +77,7 @@ function App() {
         </button>
       </div>
 
+      // StatCard
       <div className="flex justify-center gap-6 pb-8">
         <div className="w-48 rounded-xl bg-[#F3E6D5] py-4 text-center">
           <p className="text-4xl font-bold">{stars}</p>
@@ -84,7 +94,9 @@ function App() {
       </div>
 
       <main className="grid grid-cols-3 gap-8 px-20">
+        // Features
         <div className="rounded-xl bg-[#F3E6D5] p-6">
+          // FeatureCard
           <span className="rounded-full bg-[#800020] px-4 py-1 text-base font-bold text-[#FFF9F2]">
             Free
           </span>
@@ -106,7 +118,7 @@ function App() {
           <p className="mt-3 text-xl text-[#000000]">Every component takes a few plain props.</p>
         </div>
       </main>
-
+      // Footer
       <footer className="mt-auto bg-[#F3E6D5] px-20 py-6 text-center text-xl">
         <p>Maroon UI is free and open source.</p>
       </footer>
